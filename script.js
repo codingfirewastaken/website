@@ -59,7 +59,7 @@ let stories = [
     "you have been warned, there is nowhere to run",
     "how many mirror portal",
     "how many dash orb",
-    "yo fone longing",
+    "yo fone linging",
     "cool pink car",
     "the deep",
     "Plug walk", 
@@ -72,7 +72,10 @@ let stories = [
     "INDIA HACK GANG",
     "visor's visor",
     "PG Clubstairs",
-    "No bad word"
+    "No bad word",
+
+    "Who this man is?",
+    "localhost hacker"
 ]
 
 let currentIndex = stories.length;
