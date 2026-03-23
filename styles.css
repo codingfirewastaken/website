@@ -47,7 +47,23 @@ a:hover { color: #C8C8C8; }
     left: 50%;
 }
 
+
+.scroller {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 #news {
     display: flex;
     gap: 30em;
+    width: max-content; 
+    animation: moveLeft 60s linear infinite; 
+}
+
+
+@keyframes moveLeft {
+    0% { transform: translateX(100vw); } 
+    100% { transform: translateX(-100%); } 
 }
