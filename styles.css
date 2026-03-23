@@ -48,22 +48,25 @@ a:hover { color: #C8C8C8; }
 }
 
 
-.scroller {
+/* This is the 'window' that hides the extra text */
+.news-container {
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
+    overflow: hidden; /* Stops the text from spilling out onto the page */
+    position: absolute; /* Or fixed, depending on where you want it */
+    top: 0;
 }
-
 
 #news {
     display: flex;
-    gap: 30em;
-    width: max-content; 
-    animation: moveLeft 60s linear infinite; 
+    width: max-content;  /* Forces the div to be as wide as all stories combined */
+    white-space: nowrap; /* Forces text to stay on ONE line */
+    gap: 30em;           /* Keeps your spacing */
+    
+    /* The Animation */
+    animation: scroll-ticker 60s linear infinite;
 }
 
-
-@keyframes moveLeft {
-    0% { transform: translateX(100vw); } 
-    100% { transform: translateX(-100%); } 
+@keyframes scroll-ticker {
+    0% { transform: translateX(100vw); }   /* Start at right edge of screen */
+    100% { transform: translateX(-100%); } /* End once the whole line passes the left edge */
 }
