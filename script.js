@@ -7,7 +7,6 @@ let stories = [
     "10 seconds has passed. You can now use LongJump.",
     "We are learning.",
     "We are receiving programming.",
-    "Divine intellect compiler",
     "The hardest question in programming...",
     "sudo apt install opsec",
     "Stand for a free internet, and the right to privacy and anonymity! Call upon the UK government to repeal the Online Safety Act! Don't give up your privacy, use a VPN!",
